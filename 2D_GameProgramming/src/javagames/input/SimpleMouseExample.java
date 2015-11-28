@@ -1,5 +1,3 @@
-
-
 package javagames.input;
 
 import java.awt.*;
@@ -44,7 +42,7 @@ public class SimpleMouseExample
         canvas.setIgnoreRepaint(true);
         getContentPane().add(canvas);
         setTitle("Simple Mouse Example");
-        setIgnoreRepaint(true);
+        setIgnoreRepaint(true); // for performance
         pack();
         
         keyboard = new KeyboardInput();

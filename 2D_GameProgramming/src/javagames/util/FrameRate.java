@@ -1,5 +1,3 @@
-
-
 package javagames.util;
 
 
