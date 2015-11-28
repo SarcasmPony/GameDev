@@ -58,6 +58,5 @@ public class KeyboardInput implements KeyListener
     }
 
     public void keyTyped(KeyEvent e)
-    {}
-    
+    {}    
 }

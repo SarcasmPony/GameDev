@@ -132,6 +132,7 @@ public class SimpleMouseExample
         if (keyboard.keyDownOnce(KeyEvent.VK_C))
         {
             lines.clear();
+            System.out.println("Swag");
         }
     }
     
