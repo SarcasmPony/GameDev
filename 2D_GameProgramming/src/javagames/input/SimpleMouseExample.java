@@ -119,9 +119,13 @@ public class SimpleMouseExample
         {
             System.out.println("VK_SPACE");
         }
+        if (keyboard.keyDownOnce(KeyEvent.VK_B)){
+        	lines.add(null);
+        }
         if (mouse.buttonDown(MouseEvent.BUTTON1))
         {
-            lines.add(mouse.getPosition());
+    		lines.add(mouse.getPosition());
+            drawingLine = true;
         }
         else if (drawingLine)
         {
@@ -132,7 +136,6 @@ public class SimpleMouseExample
         if (keyboard.keyDownOnce(KeyEvent.VK_C))
         {
             lines.clear();
-            System.out.println("Swag");
         }
     }
     
