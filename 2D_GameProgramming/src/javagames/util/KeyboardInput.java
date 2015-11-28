@@ -51,13 +51,12 @@ public class KeyboardInput implements KeyListener
     public synchronized void keyReleased(KeyEvent e)
     {
         int keyCode = e.getKeyCode();
-        if (keyCode >= 0 && keyCode > keys.length)
+        if (keyCode >= 0 && keyCode < keys.length)
         {
             keys[keyCode] = false;
         }
     }
 
     public void keyTyped(KeyEvent e)
-    {}
-    
+    {}    
 }

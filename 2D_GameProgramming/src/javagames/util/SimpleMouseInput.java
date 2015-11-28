@@ -55,7 +55,12 @@ public class SimpleMouseInput
     
     public boolean buttonDown(int button)
     {
-        return polled[button - 1] == 1;
+        return polled[button - 1] > 0;
+    }
+    
+    public boolean buttonDownOnce(int button)
+    {
+        return polled[button -1] == 1;
     }
     
     public synchronized void mousePressed(MouseEvent e)
